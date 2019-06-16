@@ -1,0 +1,20 @@
+
+To run the emulator 
+$./emulator -avd Pixel_2_API_24
+
+
+
+To Start the App and intent (Provide link after name1)
+$adb shell am start -n com.poojab26.textrecognizer/.MainActivity -e name1 https\:\/\/practice\.typekit\.com\/social\/l002\-social\.jpg
+
+
+To get the result we use Logcat of emulator of specific API TAG NAME
+$adb logcat -s "TAG"
+
+
+
+import subprocess
+
+output = subprocess.run("ls -l", shell=True, stdout=subprocess.PIPE, 
+                        universal_newlines=True)
+print(output.stdout)
